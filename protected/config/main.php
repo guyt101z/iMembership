@@ -53,7 +53,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=imembership',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'root',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(
