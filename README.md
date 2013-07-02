@@ -3,8 +3,8 @@ iMembership
 
 <h3>Membership management application using PHP Yii Framework and MySql.</h3>
 
-You add user and assign then role which is called as user group.
-Add multiple memberships with validity days with cost.
+You can add user and assign them role which is called as user group.
+Add multiple memberships with validity days with cost and the assign memberships to members.
 
 <b>First you need to download or clone Yii framework.</b>
 <br>
