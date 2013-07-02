@@ -1,14 +1,13 @@
 <?php
 
-class m130702_001832_create_membership extends CDbMigration
+class m130702_010150_create_user_membership extends CDbMigration
 {
 	public function up()
 	{
-		$this->createTable('tbl_membership', array(
+		$this->createTable('tbl_user_membership', array(
       'id' => 'pk',
-      'membership_name' => 'VARCHAR(80) NOT NULL',
-      'days' => 'INTEGER (3)',
-      'rate' => 'INTEGER (10)',
+      'member_id' => 'INTEGER (10) NOT NULL',
+      'membership_id' => 'INTEGER (10) NOT NULL',
       'created_at' => 'DATETIME DEFAULT NULL',
 		  'updated_at' => 'TIMESTAMP ON UPDATE CURRENT_TIMESTAMP',
     ), 'ENGINE=InnoDB CHARSET=utf8');
@@ -16,7 +15,7 @@ class m130702_001832_create_membership extends CDbMigration
 
 	public function down()
 	{
-		$this->dropTable('tbl_membership');
+		$this->dropTable('tbl_user_membership');
 	}
 
 	/*

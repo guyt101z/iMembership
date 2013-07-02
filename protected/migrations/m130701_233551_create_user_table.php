@@ -21,7 +21,7 @@ class m130701_233551_create_user_table extends CDbMigration
 		  'status'=> 'INTEGER (1) NOT NULL DEFAULT \'0\' ',
 	    'UNIQUE KEY `email` (`email`)',
 	    'KEY `status` (`status`)',
-    ));
+    ), 'ENGINE=InnoDB CHARSET=utf8');
 	}
 
 	public function down()
